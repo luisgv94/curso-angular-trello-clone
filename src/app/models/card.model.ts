@@ -1,4 +1,4 @@
-import { List } from "./list.model";
+import { List } from './list.model';
 
 export interface Card {
   id: string;
@@ -28,3 +28,8 @@ export interface UpdateCardDto {
   listId?: string | number;
   boardId?: string;
 }
+
+// export interface UpdateCardDto extends Partial<Omit<Card, 'id' | 'list'>> {
+//   listId?: number | string;
+//   boardId?: string;
+// }
